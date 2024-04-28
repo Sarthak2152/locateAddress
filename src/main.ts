@@ -23,7 +23,7 @@ const handleSubmit = async (event: Event) => {
     if (response.data.features.length > 0) {
       const [lng, lat] = response.data.features[0].geometry.coordinates;
       mapboxgl.accessToken = KEY;
-      const map = new mapboxgl.Map({
+      new mapboxgl.Map({
         zoom: 10,
         container: "map", // container ID
         center: [lng, lat],

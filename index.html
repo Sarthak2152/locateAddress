@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Learning TS</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="container">
+        <div class="fallback">Enter address to view in map</div>
+        <div id="map"></div>
+      </div>
+      <form>
+        <input placeholder="Enter address" id="address" type="text" />
+        <br />
+        <button id="search" type="submit">Search</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
